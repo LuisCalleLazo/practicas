@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\LunchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,11 @@ Route::controller(PersonaController::class )->group(function(){
     Route::get('/personas/create', 'create');
     Route::get('/personas/{persona}', 'show');
 });
+
+Route::get('/lunch', [LunchController::class, 'index'])->name('lunch.index');
+Route::post('/lunch', [LunchController::class, 'store'])->name('lunch.store');
+Route::put('/lunch/{id}', [LunchController::class, 'update'])->name('lunch.update');
+Route::delete('/lunch/{id}', [LunchController::class, 'delete'])->name('lunch.delete');
+
+Route::get('/lunch/create', [LunchController::class, 'create'])->name('lunch.create');
+Route::get('/lunch/show/{id}', [LunchController::class, 'show'])->name('lunch.show');
