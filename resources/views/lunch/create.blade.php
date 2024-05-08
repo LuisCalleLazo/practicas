@@ -35,17 +35,13 @@
                     </div>
                     <div>
                         <div class="flex justify-around w-[300px]">
-                            <div><h3>Es familiar</h3></div>
-                            <div>
-                                <input type="checkbox" name="is_family">
-                            </div>
+                            <label for="is_family">Es familiar</label>
+                            <input type="checkbox" id="is_family" name="is_family" value="true" {{ old('is_family')? 'checked' : '' }}>
                         </div>
                         <br>
                         <div class="flex justify-around w-[300px]">
-                            <div><h3>LLeva sopa</h3></div>
-                            <div>
-                                <input type="checkbox" name="soup">
-                            </div>
+                            <label for="soup">LLeva sopa</label>
+                            <input type="checkbox" id="soup" name="soup" value="true" {{ old('soup')? 'checked' : '' }}>
                         </div>
                     </div>
                     <div>
