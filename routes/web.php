@@ -37,12 +37,12 @@ use App\Http\Controllers\LunchController;
 // Route::get('/personas/{persona}', [PersonaController::class, 'show']);
 Route::get('/', InicioController::class);
 
-Route::controller(PersonaController::class )->group(function(){
+// Route::controller(PersonaController::class )->group(function(){
 
-    Route::get('/personas',  'index');
-    Route::get('/personas/create', 'create');
-    Route::get('/personas/{persona}', 'show');
-});
+//     Route::get('/personas',  'index');
+//     Route::get('/personas/create', 'create');
+//     Route::get('/personas/{persona}', 'show');
+// });
 
 Route::get('/lunch', [LunchController::class, 'index'])->name('lunch.index');
 Route::post('/lunch', [LunchController::class, 'store'])->name('lunch.store');

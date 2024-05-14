@@ -8,6 +8,6 @@ class InicioController extends Controller
 {
     public function __invoke()
     {
-        return "<h1>ESTA ES LA PRIMERA VISTA</h1>";
+        return view('welcome');
     }
 }
