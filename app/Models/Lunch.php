@@ -28,4 +28,8 @@ class Lunch extends Model
         'soup' => 'boolean'
     ];
 
+    public function sale()
+    {
+      return $this->hasMany(Sale::class, 'sale_id');
+    }
 }

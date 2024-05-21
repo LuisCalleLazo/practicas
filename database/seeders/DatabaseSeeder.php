@@ -6,7 +6,6 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\LunchSeeder;
 
-
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -22,6 +21,10 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             LunchSeeder::class,
+            CustomerSeeder::class,
+            SaleSeeder::class
         ]);
+
+
     }
 }

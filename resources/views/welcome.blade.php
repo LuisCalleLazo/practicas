@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <button class="py-4 px-10 bg-[#127] rounded-lg text-white hover:scale-110 duration-75 ease-linear">
-                        <a href="{{ route('lunch.index') }}">
+                        <a href="{{ route('sale.index') }}">
                             IR A CRUD
                         </a>
                     </button>
